@@ -15,7 +15,7 @@ bot.command('start', async (ctx) => {
     try {
         // 2. Инициализация коннектора
         const connector = new TonConnect({
-            manifestUrl: 'https://yourdomain.com/tonconnect-manifest.json', // ЗАМЕНИТЕ НА СВОЙ!
+            manifestUrl: 'https://pikromachess.github.io/bot-with-connect/tonconnect-manifest.json', // ЗАМЕНИТЕ НА СВОЙ!
             storage: {
                 setItem: (key, value) => {
                     localStorage.setItem(`${userId}_${key}`, value);
